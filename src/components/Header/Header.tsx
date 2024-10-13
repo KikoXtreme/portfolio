@@ -1,4 +1,4 @@
-import '../../css/main.css';
+import '../../css/header.css';
 
 const Header = () => {
     return (
@@ -19,7 +19,12 @@ const Header = () => {
                         </a>
                         <a className="projects-link" href="#projects">
                             <li>
-                                <span>Portfolio</span>
+                                <span>Projects</span>
+                            </li>
+                        </a>
+                        <a className="work-link" href="#work">
+                            <li>
+                                <span>Work</span>
                             </li>
                         </a>
                         <a className="certificates-link" href="#certificates">

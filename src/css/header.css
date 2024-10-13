@@ -1,0 +1,153 @@
+header {
+    min-height: 100vh;
+}
+
+header .header-wrapper {
+    height: 60vh;
+    background: url("../../public/assets/laptop.jpg") fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+header .header-wrapper nav {
+    min-height: 70px;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+header .header-wrapper nav .nav-background {
+    background: linear-gradient(180deg, rgba(84, 75, 92, 0.868785014) 0%, rgb(147, 134, 137) 100%);
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    height: 70px;
+}
+
+header .header-wrapper nav ul {
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
+}
+
+header .header-wrapper nav span {
+    position: relative;
+    z-index: 1;
+}
+
+header .header-wrapper nav li {
+    color: rgb(162, 103, 105);
+}
+
+header .header-wrapper nav a {
+    cursor: pointer;
+    position: relative;
+    border: 2px solid rgb(162, 103, 105);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(142deg, rgb(213, 186, 179) 0%, rgb(236, 226, 208) 100%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: 0.3s;
+}
+
+header .header-wrapper nav a.scroll {
+    font-size: 0.9rem;
+}
+
+header .header-wrapper nav a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #f1ede9;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    border: 2px solid rgb(191, 181, 175);
+}
+
+header .header-wrapper nav a:nth-child(1)::after,
+header .header-wrapper nav a:nth-child(2)::after {
+    left: -30px;
+    top: 0;
+}
+
+header .header-wrapper nav a:hover:after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+header .header-wrapper nav a.active::after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+header .header-wrapper .nav-background.active {
+    top: 0;
+}
+
+.personal-info {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    position: relative;
+}
+
+.personal-info .img-wrapper {
+    background-image: url("../../public/assets/KikoCV.jpg");
+    background-size: cover;
+    background-position-y: -11px;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    position: absolute;
+    top: -83%;
+}
+
+.personal-info h1 {
+    color: rgb(120, 150, 200);
+    font-size: 4.2rem;
+    
+    /* @media (min-width: 576px) {
+    font-size: 5rem;
+    } */
+}
+
+.personal-info h2 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+.personal-info .contact-links-section {
+    display: flex;
+    gap: 50px;
+}
+
+.personal-info .contact-links-section .link-wrapper {
+    width: 35px;
+}
+
+.personal-info .contact-links-section .link-wrapper svg {
+    width: 100%;
+    fill: rgb(50, 120, 200);
+    transition: 0.3s;
+}
+
+.personal-info .contact-links-section .link-wrapper svg.linkedin:hover {
+    fill: rgb(19, 64, 108);
+}
+
+.personal-info .contact-links-section .link-wrapper svg.github:hover {
+    fill: rgb(0, 0, 0);
+}
