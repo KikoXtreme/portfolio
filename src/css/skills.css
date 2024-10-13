@@ -1,0 +1,103 @@
+.skills {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 4% 0;
+}
+
+.skills h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(50, 120, 200);
+    margin-bottom: 2rem;
+}
+
+.skills .grid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin: 0 auto;
+    width: 58%;
+}
+
+.skills .skill-section {
+    border: 2px solid rgb(50, 120, 200);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.skills .skill-section h4 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.skills .skill-section .logo-section svg {
+    width: 70px;
+    fill: rgb(50, 120, 200);
+}
+
+.skills .skill-section .logo-section li {
+    color: rgb(78, 75, 75);
+}
+
+.skills .professional {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: span 2;
+    margin-right: 50px;
+}
+
+.skills .professional h4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills .professional ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.skills .professional ul div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .personal h5,
+.skills .languages h5 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.skills .personal div,
+.skills .languages div {
+    margin-bottom: 10px;
+}
+
+.skills .personal div p,
+.skills .languages div p {
+    color: rgb(78, 75, 75);
+}
+
+.skills .personal {
+    padding-left: 40px;
+    font-size: 1.3rem;
+    line-height: 35px;
+}
+
+.skills .personal li {
+    list-style-type: disc;
+}
+
+.skills .personal li::marker {
+    color: rgb(162, 103, 105);
+}
