@@ -1,129 +1,19 @@
+import About from "../About/About";
+import Certificates from "../Certificates/Certificates";
+import Contacts from "../Contacts/Contacts";
+import Projects from "../Projects/Projects";
+import Skills from "../Skills/Skills";
+import Work from "../Work/Work";
+
 const Main = () => {
     return (
         <>
-            <div id="about">About Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div id="skills">Skills Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div>MAIN Component</div>
-            <div id="contacts">CONTACTS Component</div>
-            <div>MAIN Component</div>
+            < About />
+            < Skills />
+            < Projects />
+            < Work />
+            < Certificates />
+            < Contacts />
         </>
     )
 }
