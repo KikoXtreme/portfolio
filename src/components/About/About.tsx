@@ -9,7 +9,7 @@ const About = () => {
                 My journey into the world of Web development began with intensive specialized courses at Softuni, where I took the JS Web Development path. Throughout the courses, I consistently achieved excellent scores. As a result, I have become proficient in a range of technologies, including JavaScript, TypeScript, React, HTML & CSS, Material UI, Redux Toolkit, Angular, Node.js, MongoDB and more.
             </p>
             <p>
-                Later my path get me to a job - first as a Junior Front-End Developer and later as a React Developer. I have perfected and improved my skills even more. I have gained knowledge with Figma, Jira, Monday.com, Bootstrap, Preprocessors, especially SCSS where heavily used for styling my working Landing pages and components. I am still getting to know the programming world and still eager to get more proficient and to excell at my work.
+                Later my path get me to a job - first as a Junior Front-End Developer and later as a React Developer. I have perfected and improved my skills even more. I have gained knowledge with Figma, Jira, Monday.com, Bootstrap, Preprocessors, especially SCSS which I heavily used for styling my working components and Landing pages. I am still getting to know the programming world and still eager to get more proficient and to excell at my work.
             </p>
         </section>
     )
