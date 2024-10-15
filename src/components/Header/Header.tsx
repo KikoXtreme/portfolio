@@ -1,78 +1,92 @@
+import { useEffect } from 'react';
 import '../../css/header.css';
 
 const Header = () => {
-
-    start();
-
-    function start() {
+    useEffect(() => {
         const navButtons = document.querySelectorAll('ul a');
         const navBackground = document.querySelector('.nav-background');
 
         const aboutSection = document.querySelector('#about');
         const skillsSection = document.querySelector('#skills');
         const projectsSection = document.querySelector('#projects');
+        const workSection = document.querySelector('#work');
         const certificatesSection = document.querySelector('#certificates');
         const headerSection = document.querySelector('#header');
 
         const aboutLink = document.querySelector('.about-link');
         const skillsLink = document.querySelector('.skills-link');
         const projectsLink = document.querySelector('.projects-link');
+        const workLink = document.querySelector('.work-link');
         const certificatesLink = document.querySelector('.certificates-link');
         const contactsLink = document.querySelector('.contacts-link');
 
-        window.onscroll = function () {
-            scrollHandler();
-        };
-
-        function scrollHandler() {
+        const scrollHandler = () => {
             const y = window.scrollY;
 
-            if (y > 0) {
-                navBackground!.classList.add('active');
-                navButtons.forEach((e) => e.classList.add('scroll'));
-            } else if (y === 0) {
-                navBackground!.classList.remove('active');
-                navButtons.forEach((e) => e.classList.remove('scroll'));
-                navButtons.forEach((e) => e.classList.remove('acitve'));
+            if (navBackground) {
+                if (y > 0) {
+                    navBackground.classList.add('active');
+
+                    if (navButtons.length > 0) {
+                        navButtons.forEach((e) => e.classList.add('scroll'));
+                    }
+                } else {
+                    navBackground.classList.remove('active');
+
+                    if (navButtons.length > 0) {
+                        navButtons.forEach((e) => {
+                            e.classList.remove('scroll');
+                            e.classList.remove('active');
+                        });
+                    }
+                }
             }
 
-            let documentHeight = document.body.scrollHeight;
-            let currentScroll = window.scrollY + window.innerHeight;
+            if (headerSection && aboutSection && skillsSection && projectsSection && workSection && certificatesSection) {
+                let documentHeight = document.body.scrollHeight;
+                let currentScroll = window.scrollY + window.innerHeight;
 
-            if (y <= getPosition(headerSection)) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-            } else if (
-                y >= getPosition(aboutSection) - 200 &&
-                y <= getPosition(skillsSection) - 150
-            ) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-                aboutLink!.classList.add('active');
-            } else if (
-                y >= getPosition(skillsSection) - 150 &&
-                y <= getPosition(projectsSection) - 100
-            ) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-                skillsLink!.classList.add('active');
-            } else if (
-                y >= getPosition(projectsSection) - 100 &&
-                y <= getPosition(certificatesSection) - 100
-            ) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-                projectsLink!.classList.add('active');
-            } else if (
-                y >= getPosition(certificatesSection) - 100 &&
-                !(currentScroll + 5 >= documentHeight)
-            ) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-                certificatesLink!.classList.add('active');
-            } else if (currentScroll + 5 >= documentHeight) {
-                navButtons.forEach((e) => e.classList.remove('active'));
-                contactsLink!.classList.add('active');
+                if (y <= getPosition(headerSection)) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                } else if (
+                    y >= getPosition(aboutSection) - 200 &&
+                    y <= getPosition(skillsSection) - 150
+                ) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    aboutLink?.classList.add('active');
+                } else if (
+                    y >= getPosition(skillsSection) - 150 &&
+                    y <= getPosition(projectsSection) - 100
+                ) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    skillsLink?.classList.add('active');
+                } else if (
+                    y >= getPosition(projectsSection) - 100 &&
+                    y <= getPosition(workSection) - 100
+                ) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    projectsLink?.classList.add('active');
+                } else if (
+                    y >= getPosition(workSection) - 100 &&
+                    y <= getPosition(certificatesSection) - 100
+                ) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    workLink?.classList.add('active');
+                } else if (
+                    y >= getPosition(certificatesSection) - 100 &&
+                    !(currentScroll + 5 >= documentHeight)
+                ) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    certificatesLink?.classList.add('active');
+                } else if (currentScroll + 5 >= documentHeight) {
+                    navButtons.forEach((e) => e.classList.remove('active'));
+                    contactsLink?.classList.add('active');
+                }
             }
-        }
+        };
 
-        function getPosition(element: any) {
-            var yPosition = 0;
+        const getPosition = (element: any) => {
+            let yPosition = 0;
 
             while (element) {
                 yPosition +=
@@ -81,8 +95,14 @@ const Header = () => {
             }
 
             return yPosition;
-        }
-    }
+        };
+
+        window.addEventListener('scroll', scrollHandler);
+
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+        };
+    }, []);
 
     return (
         <header>
@@ -91,39 +111,27 @@ const Header = () => {
                     <div className="nav-background"></div>
                     <ul>
                         <a className="about-link" href="#about">
-                            <li>
-                                <span>About</span>
-                            </li>
+                            <li>About</li>
                         </a>
                         <a className="skills-link" href="#skills">
-                            <li>
-                                <span>Skills</span>
-                            </li>
+                            <li> Skills</li>
                         </a>
                         <a className="projects-link" href="#projects">
-                            <li>
-                                <span>Projects</span>
-                            </li>
+                            <li>Projects</li>
                         </a>
                         <a className="work-link" href="#work">
-                            <li>
-                                <span>Work</span>
-                            </li>
+                            <li>Work</li>
                         </a>
                         <a className="certificates-link" href="#certificates">
-                            <li>
-                                <span>Certificates</span>
-                            </li>
+                            <li>Certificates</li>
                         </a>
                         <a className="contacts-link" href="#contacts">
-                            <li>
-                                <span>Contacts</span>
-                            </li>
+                            <li>Contacts</li>
                         </a>
                     </ul>
                 </nav>
             </section>
-            <section className="personal-info">
+            <section id="header" className="personal-info">
                 <div className="img-wrapper"></div>
                 <div id="header"></div>
                 <h1>Kiril Valkov</h1>
@@ -147,7 +155,7 @@ const Header = () => {
                 </section>
             </section>
         </header>
-    )
+    );
 }
 
 export default Header;

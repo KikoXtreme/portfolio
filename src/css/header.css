@@ -23,7 +23,7 @@ header .header-wrapper nav {
 }
 
 header .header-wrapper nav .nav-background {
-    background: linear-gradient(180deg, rgba(52, 200, 50, 0.8) 0%, rgb(228, 228, 160) 100%);
+    background: linear-gradient(180deg, rgba(50, 200, 50, 0.8) 0%, rgb(240, 240, 20, 0.5) 100%);
     transition: all ease-in-out 0.5s;
     width: 100%;
     position: absolute;
@@ -37,12 +37,9 @@ header .header-wrapper nav ul {
     margin: 0 auto;
 }
 
-header .header-wrapper nav span {
+header .header-wrapper nav li {
     position: relative;
     z-index: 1;
-}
-
-header .header-wrapper nav li {
     color: rgb(50, 120, 200);
 }
 
@@ -50,16 +47,15 @@ header .header-wrapper nav a {
     cursor: pointer;
     position: relative;
     border: 2px solid rgb(50, 120, 200);
-    font-size: 1rem;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
     background: linear-gradient(180deg, rgb(87, 209, 250) 0%, rgb(164, 232, 161) 100%);
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 20px;
     overflow: hidden;
-    height: -moz-fit-content;
     height: fit-content;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 header .header-wrapper nav a.scroll {
@@ -98,9 +94,9 @@ header .header-wrapper .nav-background.active {
 }
 
 .personal-info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    place-items: center;
     position: relative;
 }
 
@@ -108,30 +104,31 @@ header .header-wrapper .nav-background.active {
     background-image: url("../../public/assets/KikoCV.jpg");
     background-size: cover;
     background-position-y: -11px;
-    width: 185px;
-    height: 185px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    border: 3px solid rgb(50, 120, 200);
     position: absolute;
-    top: -83%;
+    top: -80%;
 }
 
 .personal-info h1 {
     color: rgb(50, 120, 200);
-    font-size: 4.2rem;
-    
+    font-size: 70px;
+
     /* @media (min-width: 576px) {
     font-size: 5rem;
     } */
 }
 
 .personal-info h2 {
-    font-size: 3rem;
-    margin: 30px 0;
+    font-size: 48px;
+    margin: 20px 0;
 }
 
 .personal-info .contact-links-section {
     display: flex;
-    gap: 50px;
+    gap: 60px;
 }
 
 .personal-info .contact-links-section .link-wrapper {
@@ -141,13 +138,9 @@ header .header-wrapper .nav-background.active {
 .personal-info .contact-links-section .link-wrapper svg {
     width: 100%;
     fill: rgb(50, 120, 200);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.personal-info .contact-links-section .link-wrapper svg.linkedin:hover {
-    fill: rgb(19, 64, 108);
-}
-
-.personal-info .contact-links-section .link-wrapper svg.github:hover {
-    fill: rgb(0, 0, 0);
+.personal-info .contact-links-section .link-wrapper svg:hover {
+    fill: #000000;
 }
