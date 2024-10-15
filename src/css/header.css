@@ -23,7 +23,7 @@ header .header-wrapper nav {
 }
 
 header .header-wrapper nav .nav-background {
-    background: linear-gradient(180deg, rgba(50, 200, 50, 0.8) 0%, rgb(240, 240, 20, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
     transition: all ease-in-out 0.5s;
     width: 100%;
     position: absolute;
@@ -40,17 +40,17 @@ header .header-wrapper nav ul {
 header .header-wrapper nav li {
     position: relative;
     z-index: 1;
-    color: rgb(50, 120, 200);
+    color: #FFFFFF;
 }
 
 header .header-wrapper nav a {
     cursor: pointer;
     position: relative;
-    border: 2px solid rgb(50, 120, 200);
+    border: 2px solid #FFFFFF;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    background: linear-gradient(180deg, rgb(87, 209, 250) 0%, rgb(164, 232, 161) 100%);
+    background: rgb(50, 120, 200);
     padding: 6px 12px;
     border-radius: 20px;
     overflow: hidden;
@@ -69,10 +69,9 @@ header .header-wrapper nav a:after {
     top: 0;
     height: 490%;
     width: 140%;
-    background: #f1ede9;
+    background: #2b2a2a;
     transition: all 0.5s ease-in-out;
     transform: translateX(-150%) translateY(-25%) rotate(45deg);
-    border: 2px solid rgb(191, 181, 175);
 }
 
 header .header-wrapper nav a:nth-child(1)::after,
@@ -107,7 +106,7 @@ header .header-wrapper .nav-background.active {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 3px solid rgb(50, 120, 200);
+    border: 3px solid #FFFFFF;
     position: absolute;
     top: -80%;
 }
