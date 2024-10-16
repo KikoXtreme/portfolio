@@ -6,7 +6,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className="project-cards-wrapper">
                 <article className="project-card">
-                    <img src="/assets/weather.png" alt="weather-image" />
+                    <img src="/portfolio/assets/weather.png" alt="weather-image" />
                     <div>
                         <a href="https://kikoxtreme.github.io/weatherApp/" target="_blank" rel="nooper noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -23,7 +23,7 @@ const Projects = () => {
                     </div>
                 </article>
                 <article className="project-card">
-                    <img src="/assets/shopco.png" alt="shopco-image" />
+                    <img src="/portfolio/assets/shopco.png" alt="shopco-image" />
                     <div>
                         <a href="https://kikoxtreme.github.io/ShopCo/" target="_blank" rel="nooper noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -40,7 +40,8 @@ const Projects = () => {
                     </div>
                 </article>
                 <article className="project-card">
-                    <img src="/assets/userdb.png" alt="userdb-image" />
+                    <img src="/portfolio/assets/userdb.png" alt="userdb-image" />
+                    {/* <img className='logo-img' alt="" src='/ShopCo/assets/logo.jpg' /> */}
                     <div>
                         <a href="https://kikoxtreme.github.io/userDB/" target="_blank" rel="nooper noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -57,7 +58,7 @@ const Projects = () => {
                     </div>
                 </article>
                 <article className="project-card">
-                    <img src="/assets/validation.png" alt="validation-image" />
+                    <img src="/portfolio/assets/validation.png" alt="validation-image" />
                     <div>
                         <a href="https://kikoxtreme.github.io/React-SPA/" target="_blank" rel="nooper noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

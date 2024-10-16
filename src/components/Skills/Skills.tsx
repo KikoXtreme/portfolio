@@ -9,51 +9,51 @@ const Skills = () => {
                     <h3>Professional</h3>
                     <ul>
                         <div className="logo-section">
-                            <img src="/assets/js.png" alt="js" />
+                            <img src="/portfolio/assets/js.png" alt="js" />
                             <li>JavaScript</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/ts.png" alt="ts" />
+                            <img src="/portfolio/assets/ts.png" alt="ts" />
                             <li>Typescript</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/react.png" alt="react" />
+                            <img src="/portfolio/assets/react.png" alt="react" />
                             <li>React</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/html.png" alt="html" />
+                            <img src="/portfolio/assets/html.png" alt="html" />
                             <li>HTML</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/css.png" alt="scc" />
+                            <img src="/portfolio/assets/css.png" alt="scc" />
                             <li>CSS</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/sass.png" alt="sass" />
+                            <img src="/portfolio/assets/sass.png" alt="sass" />
                             <li>SASS</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/bootstrap.png" alt="bootstrap" />
+                            <img src="/portfolio/assets/bootstrap.png" alt="bootstrap" />
                             <li>Bootstrap</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/materialui.png" alt="materialui" />
+                            <img src="/portfolio/assets/materialui.png" alt="materialui" />
                             <li>MaterialUI</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/git.png" alt="git" />
+                            <img src="/portfolio/assets/git.png" alt="git" />
                             <li>Git</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/angular.png" alt="angular" />
+                            <img src="/portfolio/assets/angular.png" alt="angular" />
                             <li>Angular</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/nodejs.png" alt="nodejs" />
+                            <img src="/portfolio/assets/nodejs.png" alt="nodejs" />
                             <li>Node.js</li>
                         </div>
                         <div className="logo-section">
-                            <img src="/assets/mongodb.png" alt="mongodb" />
+                            <img src="/portfolio/assets/mongodb.png" alt="mongodb" />
                             <li>MongoDB</li>
                         </div>
                     </ul>
