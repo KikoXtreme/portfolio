@@ -19,12 +19,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    line-height: 28px;
+    line-height: 24px;
     margin: 0 auto 1rem;
     border: 2px solid rgb(50, 120, 200);
     border-radius: 14px;
-    width: 25%;
+    width: 80vw;
     height: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contacts .card-wrapper {
+        width: 60vw;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts .card-wrapper {
+        width: 30vw;
+    }
 }
 
 .contacts .card-wrapper:nth-child(1):hover {
@@ -33,7 +46,7 @@
 
 .contacts .card-wrapper:nth-child(1):hover p {
     /* font-weight: 700; */
-    color: rgb(50, 120, 200);;
+    color: rgb(50, 120, 200);
 }
 
 .contacts p {
