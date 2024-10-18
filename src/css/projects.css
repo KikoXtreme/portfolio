@@ -52,7 +52,6 @@
 
 .projects .project-cards-wrapper .project-card img {
     width: 100%;
-    /* -o-object-fit: cover; */
     object-fit: inherit;
     height: 60%;
     border-radius: 9px;
@@ -68,31 +67,39 @@
 
 .projects .project-cards-wrapper .project-card div {
     position: absolute;
-    bottom: 100px;
+    bottom: 8px;
     width: 100%;
     text-align: center;
-    transform: translateY(100px);
+    transform: translateY(8px);
     transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+    .projects .project-cards-wrapper .project-card div {
+        bottom: 25px; /*100px*/
+        transform: translateY(100px);
+    }
 }
 
 @media (max-width: 768px) {
     .projects .project-cards-wrapper .project-card div {
         display: flex;
         flex-direction: column;
+        gap: 8px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects .project-cards-wrapper .project-card div {
         gap: 7px;
         font-size: 9px;
     }
 }
 
-@media (min-width: 768px) {
-    .projects .project-cards-wrapper .project-card div {
-        bottom: 25px;
-    }
-}
-
 .projects .project-cards-wrapper .project-card div svg {
-    width: 12px;
     position: absolute;
+    width: 12px;
     top: 4px;
     left: 5px;
     fill: #f1ede9;
@@ -101,6 +108,13 @@
 
 @media (min-width: 768px) {
     .projects .project-cards-wrapper .project-card div svg {
+        width: 14px;
+        top: 9px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects .project-cards-wrapper .project-card div svg {
         width: 20px;
         top: 9px;
     }
@@ -108,8 +122,6 @@
 
 .projects .project-cards-wrapper .project-card div a {
     background: rgb(69, 64, 69);
-    /* padding: 10px; */
-    /* padding-left: 30px; */
     padding: 4px 5px 4px 20px;
     position: relative;
     color: #f1ede9;
@@ -129,6 +141,12 @@
 }
 
 @media (min-width: 768px) {
+    .projects .project-cards-wrapper .project-card div a:nth-child(1) {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
     .projects .project-cards-wrapper .project-card div a:nth-child(1) {
         margin-right: 20px;
     }

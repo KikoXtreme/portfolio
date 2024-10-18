@@ -41,7 +41,6 @@ const Projects = () => {
                 </article>
                 <article className="project-card">
                     <img src="/portfolio/assets/userdb.png" alt="userdb-image" />
-                    {/* <img className='logo-img' alt="" src='/ShopCo/assets/logo.jpg' /> */}
                     <div>
                         <a href="https://kikoxtreme.github.io/userDB/" target="_blank" rel="nooper noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

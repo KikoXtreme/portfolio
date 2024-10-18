@@ -4,8 +4,8 @@ header {
 
 header .header-wrapper {
     height: 55vh;
-    background: url("../../public/assets/laptop.jpg") fixed;
-    background-size: contain;
+    background: url("../../public/assets/laptop.jpg");
+    background-size: cover;
     background-position: center;
     position: relative;
     margin-bottom: 80px;
@@ -14,7 +14,9 @@ header .header-wrapper {
 @media (min-width: 768px) {
     header .header-wrapper {
         height: 60vh;
+        background: url("../../public/assets/laptop.jpg") fixed;
         background-size: cover;
+        background-position: center;
         margin-bottom: 100px;
     }
 }
@@ -47,6 +49,12 @@ header .header-wrapper nav ul {
 
 @media (min-width: 768px) {
     header .header-wrapper nav ul {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .header-wrapper nav ul {
         gap: 100px;
     }
 }
@@ -74,6 +82,14 @@ header .header-wrapper nav a {
 
 @media (min-width: 768px) {
     header .header-wrapper nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .header-wrapper nav a {
         font-size: 16px;
         letter-spacing: 3px;
         padding: 6px 12px;
@@ -96,7 +112,7 @@ header .header-wrapper nav a:after {
     left: 0;
     top: 0;
     height: 490%;
-    width: 140%;
+    width: 160%; /*140%;*/
     background: #2b2a2a;
     transition: all 0.5s ease-in-out;
     transform: translateX(-150%) translateY(-25%) rotate(45deg);
@@ -136,7 +152,7 @@ header .header-wrapper .nav-background.active {
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     position: absolute;
-    top: -50vw;
+    top: -90%;
 }
 
 @media (min-width: 768px) {
