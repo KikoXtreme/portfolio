@@ -3,7 +3,7 @@ import '../../css/contacts.css';
 const Contacts = () => {
     return (
         <section id="contacts" className="contacts">
-            <h2>Contacts</h2>
+            <h2>{"( "}Contacts{" )"}</h2>
             <a href="https://github.com/KikoXtreme" target="_blank" rel="nooper noreferrer">
                 <div className="card-wrapper first-contact">
                     <img src="/portfolio/assets/github.png" alt="git icon" />
