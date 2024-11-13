@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4% 0;
+    padding: 3vw 0vw;
     background: linear-gradient(180deg, rgb(120, 150, 200) 0%, rgb(240, 240, 240) 100%);
 }
 
@@ -13,32 +13,81 @@
     margin-bottom: 2rem;
 }
 
-.certificates .links-wrapper {
+.certificates .links {
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 48px;
 }
 
-.certificates .links-wrapper a {
+.certificates .links a {
     color: #000000;
-    font-size: 26px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
 }
 
-.certificates .links-wrapper a:hover {
-    color: rgb(50, 120, 200);
+@media (min-width: 576px) {
+    .certificates .links a {
+        font-size: 22px;
+    }
 }
 
-.certificates .links-wrapper a::after {
+.certificates .links a:hover {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.certificates .links a::before {
     content: "";
+    position: absolute;
+    height: 50%;
     width: 0;
-    height: 2px;
-    display: block;
-    background: rgb(50, 120, 200);
-    transition: width 0.7s ease-in-out;
-    transform-origin: left; 
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    right: 0;
+    bottom: 50%;
+    
+    transition: all 0.3s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: solid 2px white;
 }
 
-.certificates .links-wrapper a:hover::after {
-    width: 100%;
+.certificates .links a::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 0;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(240, 240, 240) 120%);
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    
+    transition: all 0.3s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid 2px white;
+}
+
+.certificates .links a:hover::before {
+    width: calc(100% + 10px);
+    right: -5px;
+}
+
+.certificates .links a:hover::after {
+    width: calc(100% + 10px);
+    left: -5px;
+}
+
+@media (min-width: 576px) {
+    .certificates .links a:hover::before {
+        width: calc(100% + 60px);
+        right: -30px;
+    }
+    
+    .certificates .links a:hover::after {
+        width: calc(100% + 60px);
+        left: -30px;
+    }
 }
