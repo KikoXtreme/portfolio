@@ -22,14 +22,14 @@
 
 .certificates .links a {
     color: #000000;
-    font-size: 20px;
+    font-size: 22px;
     position: relative;
     z-index: 1;
 }
 
 @media (min-width: 576px) {
     .certificates .links a {
-        font-size: 22px;
+        font-size: 26px;
     }
 }
 
