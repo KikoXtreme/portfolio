@@ -18,19 +18,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    line-height: 24px;
     padding: 0 0.3rem;
     margin: 0 auto 1rem;
     border: 2px solid rgb(50, 120, 200);
     border-radius: 14px;
     width: 80vw;
-    height: 4rem;
+    height: 3.5rem;
+}
+
+@media (min-width: 576px) {
+    .contacts .card-wrapper {
+        width: 52vw;
+    }
 }
 
 @media (min-width: 768px) {
     .contacts .card-wrapper {
-        width: 60vw;
-        line-height: 28px;
+        width: 45vw;
         padding: 0 1rem;
     }
 }
@@ -38,6 +42,30 @@
 @media (min-width: 1200px) {
     .contacts .card-wrapper {
         width: 30vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .card-wrapper.first-contact {
+        transform: translateX(-40%);
+
+    }
+
+    .card-wrapper.second-contact {
+        transform: translateX(-20%);
+
+    }
+
+    .card-wrapper.third-contact {
+        transform: translateX(0);
+    }
+
+    .card-wrapper.fourth-contact {
+        transform: translateX(20%);
+    }
+
+    .card-wrapper.fifth-contact {
+        transform: translateX(40%);
     }
 }
 
@@ -53,8 +81,4 @@
 .contacts p {
     color: #000000;
     font-size: 20px;
-}
-
-.contacts img {
-    margin-right: 14px;
 }
