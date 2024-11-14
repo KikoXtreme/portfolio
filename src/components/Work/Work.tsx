@@ -3,7 +3,7 @@ import '../../css/work.css';
 const Work = () => {
     return (
         <section id="work" className="work">
-            <h2>Work Experience</h2>
+            <h2>{"( "}Work <span>Experience</span>{" )"}</h2>
             <div className="work-card">
                 <h3>React Developer</h3>
                 <h4>Tiebreak</h4>
@@ -32,11 +32,6 @@ const Work = () => {
             <div className="work-card">
                 <h3>Shop assistant, Cashier</h3>
                 <h4>Abercrombie and Fitch</h4>
-                <h5>Jun 2007 - Oct 2007</h5>
-            </div>
-            <div className="work-card">
-                <h3>Waiter, Busser</h3>
-                <h4>Sarentos Restaurant</h4>
                 <h5>Jun 2007 - Oct 2007</h5>
             </div>
         </section>

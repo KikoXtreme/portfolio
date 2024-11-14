@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4% 0;
+    padding: 3vw 0vw;
 }
 
 .work h2 {
@@ -11,6 +11,12 @@
     text-align: center;
     color: rgb(50, 120, 200);
     margin-bottom: 2rem;
+}
+
+@media (max-width: 575px) {
+    .work h2 span {
+        display: none;
+    }
 }
 
 .work .work-card {
