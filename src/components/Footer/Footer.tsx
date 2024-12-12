@@ -1,9 +1,7 @@
-import '../../css/footer.css'
+import './footer.scss';
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer>&copy; {new Date().getFullYear()} Kiril Valkov - All rights reserved.</footer>
-    )
-}
-
-export default Footer;
+    );
+};

@@ -1,6 +1,6 @@
-import '../../css/certificates.css';
+import './certificates.scss';
 
-const Certificates = () => {
+export const Certificates = () => {
     return (
         <section id="certificates" className="certificates">
             <h2>Certificates</h2>
@@ -15,7 +15,5 @@ const Certificates = () => {
                 <a href="https://softuni.bg/certificates/details/141693/3722928b" target="_blank" rel="nooper noreferrer">ReactJS</a>
             </div>
         </section>
-    )
-}
-
-export default Certificates;
+    );
+};

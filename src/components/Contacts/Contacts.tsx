@@ -1,6 +1,6 @@
-import '../../css/contacts.css';
+import './contacts.scss';
 
-const Contacts = () => {
+export const Contacts = () => {
     return (
         <section id="contacts" className="contacts">
             <h2>{"( "}Contacts{" )"}</h2>
@@ -35,7 +35,5 @@ const Contacts = () => {
                 </div>
             </div>
         </section>
-    )
-}
-
-export default Contacts;
+    );
+};
